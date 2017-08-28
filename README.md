@@ -10,5 +10,5 @@ for density plots and redblue for color scheme used in paper
 
 Unzip the input data (contains two csv files)
 
-Run All_figures_2 
+Run All_figures_2.m
 (all other functions called from cells within)
