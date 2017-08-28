@@ -43,12 +43,12 @@ n = 20;
 % readingsP_T = zeros(size(readingsT)); 
 % %austin
 % for i = 1:size(readingsP_A,1)
-%     readingsP_A(i,:) = findPeaks(readingsA(i,:)); 
+%     readingsP_A(i,:) = peakFindAndInterp(readingsA(i,:)); 
 % end
 % readingsN_A = zscore(readingsP_A); 
 % %torino 
 % for i = 1:size(readingsP_T,1)
-%    readingsP_T(i,:) = findPeaks(readingsT(i,:));  
+%    readingsP_T(i,:) = peakFindAndInterp(readingsT(i,:));  
 % end
 % readingsN_T = zscore(readingsP_T); 
 % sumd_A = zeros(n, 1); 
@@ -105,7 +105,7 @@ n = 20;
 readingsP_A = zeros(size(readingsA)); 
 % austin preprocess
 for i = 1:size(readingsP_A,1)
-    readingsP_A(i,:) = findPeaks(readingsA(i,:)); 
+    readingsP_A(i,:) = peakFindAndInterp(readingsA(i,:)); 
 end
 readingsN_A = zscore(readingsP_A); 
 % clustering and plotting
@@ -122,7 +122,7 @@ clear idx
 readingsP_T = zeros(size(readingsT));  
 % torino preprocess
 for i = 1:size(readingsP_T,1)
-   readingsP_T(i,:) = findPeaks(readingsT(i,:));  
+   readingsP_T(i,:) = peakFindAndInterp(readingsT(i,:));  
 end
 readingsN_T = zscore(readingsP_T); 
 % clustering and plotting
