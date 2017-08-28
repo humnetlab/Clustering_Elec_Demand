@@ -1,6 +1,6 @@
 # Clustering_Elec_Demand
 
-Contains code for generating the figures in the paper "Predictability in residential electricity consumption", by S. Alqatari, E. Barbour and M.C. Gonzalez
+Contains code for generating the figures in the paper "Predictability in residential electricity consumption" by E. Barbour, S. Alqatari and M.C. Gonzalez
 
 Dependencies:
 Requires dscatter
